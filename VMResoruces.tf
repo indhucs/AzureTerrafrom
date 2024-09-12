@@ -65,7 +65,7 @@ resource "azurerm_network_interface" "nic1" {
 }
 
 resource "azurerm_public_ip" "inpublic12" {
-  name = "testetstetest-tywteywgjh"
+  name = "inpublic12"
   resource_group_name = "TerraformRG"
   location = "East US"
   allocation_method = "Static"
