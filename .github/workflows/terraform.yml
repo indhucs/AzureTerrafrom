@@ -6,7 +6,7 @@ on: [push, pull_request]
 jobs:
   terraform:
     name: 'Terraform'
-    runs-on:  ubuntu-latest
+    runs-on:  indhu-runner
     
     defaults:
       run:
@@ -16,7 +16,7 @@ jobs:
 
     # Use the Bash shell regardless whether the GitHub Actions runner is ubuntu-latest, macos-latest, or windows-latest
     # Set the working directory to main for the config files
-    environment: TEST
+    environment: Prod
     steps:
 #       - name: install azure CLI
 #         run: sudo apt-get -y install azure-cli 
