@@ -37,7 +37,7 @@ resource "azurerm_virtual_machine" "vm1indhu" {
 }
 
 resource "azurerm_virtual_network" "vnet1" {
-  name                = "indhu12test"
+  name                = "indhu12test12"
   address_space       = ["10.10.0.0/16"]
   location            = "East US"
   resource_group_name = "TerraformRG"
@@ -60,12 +60,12 @@ resource "azurerm_network_interface" "nic1" {
     name                          = "ipconfig1"
     subnet_id                     = azurerm_subnet.subnet1.id
     private_ip_address_allocation = "Dynamic"
-    public_ip_address_id =azurerm_public_ip.inpublic12.id
+    public_ip_address_id =azurerm_public_ip.in12public12.id
   }
 }
 
-resource "azurerm_public_ip" "inpublic12" {
-  name = "inpublic12"
+resource "azurerm_public_ip" "in12public12" {
+  name = "in12public12"
   resource_group_name = "TerraformRG"
   location = "East US"
   allocation_method = "Static"
