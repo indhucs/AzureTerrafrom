@@ -6,7 +6,7 @@ on: [push, pull_request]
 jobs:
   terraform:
     name: 'Terraform'
-    runs-on:  indhu-runner
+    runs-on:  ubuntu-runner
     
     defaults:
       run:
