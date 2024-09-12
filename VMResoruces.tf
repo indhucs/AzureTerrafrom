@@ -37,7 +37,7 @@ resource "azurerm_virtual_machine" "vm1indhu" {
 }
 
 resource "azurerm_virtual_network" "vnet1" {
-  name                = "indhutest"
+  name                = "indhu12test"
   address_space       = ["10.10.0.0/16"]
   location            = "East US"
   resource_group_name = "TerraformRG"
